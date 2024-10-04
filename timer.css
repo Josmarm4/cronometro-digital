@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('fontes/DS-DIGII.TTF') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+body {
+    font-family: 'arial', sans-serif; /* Aplicando a nova fonte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Fundo escuro para simular um cronômetro digital */
+}
+
+.container {
+    text-align: center;
+    background-color: #111; /* Fundo do container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#circle {
+    width: 300px; /* Largura maior para um display digital */
+    height: 150px; /* Altura maior para um display digital */
+    background-color: #222; /* Cor do fundo do display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin: 20px auto;
+}
+
+#display {
+    font-family: 'DS-Digital', sans-serif; /* Aplicando a nova fonte */
+    font-size: 48px; /* Tamanho maior para um visual digital */
+    color: #00ff00; /* Cor verde típica de cronômetros digitais */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.buttons button:active {
+    transform: scale(0.98);
+}
